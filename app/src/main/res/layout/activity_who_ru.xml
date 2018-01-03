@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uic.whoru.WhoRUActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextSwitcher
+            android:id="@+id/my_text_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_bruv"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/editText_question"
+            android:layout_width="249dp"
+            android:layout_height="118dp"
+            android:layout_below="@+id/textView_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:enabled="false"
+            android:fontFamily="@font/pkmnrs"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lineSpacingMultiplier="1.5"
+            android:text="Question here..."
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_progress" />
+
+        <Button
+            android:id="@+id/button_A"
+            android:layout_width="250dp"
+            android:layout_height="89dp"
+            android:layout_alignStart="@+id/editText_question"
+            android:layout_centerVertical="true"
+            android:background="@drawable/buttonshape2"
+            android:fontFamily="@font/pkmnrs"
+            android:lineSpacingMultiplier="1.5"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Button A"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/editText_question"
+            app:layout_constraintStart_toStartOf="@+id/editText_question"
+            app:layout_constraintTop_toBottomOf="@+id/editText_question" />
+
+        <Button
+            android:id="@+id/button_B"
+            android:layout_width="250dp"
+            android:layout_height="92dp"
+            android:layout_alignStart="@+id/button_A"
+            android:layout_below="@+id/button_A"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/buttonshape3"
+            android:fontFamily="@font/pkmnrs"
+            android:lineSpacingMultiplier="1.5"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Button B"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/editText_question"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="@+id/editText_question"
+            app:layout_constraintTop_toBottomOf="@+id/button_A" />
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/buttonshape4"
+            android:fontFamily="@font/pkmnrs"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="stop"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/pkmnrs"
+            android:text="1/70"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
